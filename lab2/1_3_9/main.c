@@ -32,10 +32,5 @@ int main()
         scanf("%f %f", &a, &b);
         printf("%f", pow(a,b));
     }
-    if(c == 6){
-        printf("Podaj liczbe: ");
-        scanf("%f", &a);
-        printf("%f", sqrt(a));
-    }
     return 0;
 }
