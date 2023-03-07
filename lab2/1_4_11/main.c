@@ -6,7 +6,6 @@ int main()
     int a,b,c,d;
     printf("Podaj 4 liczby calkowite: \n");
     scanf("%d %d %d %d", &a,&b,&c,&d);
-    float x;
 
     //a
     if(a < 0){
@@ -22,11 +21,19 @@ int main()
         printf("%d\n",temp+1);
     }
     //b
-
+     int x = 0;
+     while(((5 * x * x) + (a * x) + b)<c){
+        x++;
+     }
+     printf("%d\n",x-1);
 
 
     //c
-
+    int x2 = 0;
+    while(((5 * x2 * x2)+ (a*x2) + b) <= c){
+        x2++;
+    }
+    printf("%d\n", x2-1);
 
 
     return 0;
