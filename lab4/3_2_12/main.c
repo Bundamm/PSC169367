@@ -10,6 +10,5 @@ int main()
 {
     double * wsk = foo(1);
     printf("%p\n", wsk);
-
     return 0;
 }
