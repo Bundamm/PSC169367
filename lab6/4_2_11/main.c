@@ -14,6 +14,12 @@ double foo(int n, double * tab1, double * tab2){
     return skalar;
 }
 
+void wyswietlTablice(int n, double * tab){
+    for(int i = 0; i<n;i++){
+        printf("[%d]=%.2lf\n", i, *(tab+i));
+    }
+}
+
 int main()
 {
     double * tab = malloc(10*sizeof(double));
