@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1680624772 source:c:\users\tomci\desktop\uwm git\psc169367\lab3\4_2_8\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1680627400 source:c:\users\tomci\desktop\uwm_git\psc169367\lab3\4_2_8\main.c
+	<stdio.h>
+	<stdlib.h>
+
