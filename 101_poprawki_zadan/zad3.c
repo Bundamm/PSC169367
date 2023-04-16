@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 float * foo(){
-    float * p = malloc(2*sizeof(float));
+    float * p = (*float)malloc(2*sizeof(float));
     *p = -3.4f;
     *(p+1) = 1.1f;
     return p+1;
