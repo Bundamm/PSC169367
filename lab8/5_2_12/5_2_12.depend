@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1682437013 source:c:\users\tomci\desktop\uwm_git\psc169367\lab8\5_2_12\main.c
+	<stdio.h>
+	<stdlib.h>
+	<wchar.h>
+	<stdbool.h>
+
