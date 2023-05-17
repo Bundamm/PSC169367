@@ -34,8 +34,7 @@ int main()
     p2.w = 2;
     p2.t = malloc(p2.w*sizeof(double));
     struct punktn tab[] = {p,p2};
-    p.t[0] = 2;
-    p.t[1] = 5;
+    p.t = (double[]) {8,9};
     p2.t[0] = 3;
     p2.t[1] = 4;
 
