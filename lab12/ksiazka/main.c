@@ -22,8 +22,8 @@ struct Ksiazka *initKsiazka(char * t, int ls){
 
 }
 
-void pokazKsiazka(struct Ksiazka * k){
-    printf("Tytul: %s, Liczba stron: %d\n", k->tytul, k->liczba_stron);
+void pokazKsiazka(struct Ksiazka k){
+    printf("Tytul: %s, Liczba stron: %d\n", k.tytul, k.liczba_stron);
     return;
 }
 
@@ -34,9 +34,9 @@ void dodajStrony(struct Ksiazka * k){
 int main()
 {
     struct Ksiazka *k1 = initKsiazka("Wiedz", 50);
-    pokazKsiazka(k1);
+    pokazKsiazka(*k1);
     dodajStrony(k1);
-    pokazKsiazka(k1);
+    pokazKsiazka(*k1);
     free(k1);
     return 0;
 }
