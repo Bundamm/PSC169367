@@ -6,11 +6,18 @@ struct Ksiazka{
     int liczba_stron;
 };
 
+int length(char * jakis){
+    int i = 0;
+    for(i = 0; jakis[i]!='\0'; i++);
+    return i;
+}
+
 struct Ksiazka *initKsiazka(char * t, int ls){
     struct Ksiazka *k = malloc(sizeof(struct Ksiazka));
     k->tytul = t;
     k->liczba_stron = ls;
-    if(strlen(k->tytul) < 5 || k->liczba_stron < 50) return NULL;
+    //if(strlen(k->tytul) < 5 || k->liczba_stron < 50) return NULL;
+    if(length(k->tytul) < 5 || k->liczba_stron < 50) return NULL;
     return k;
 
 }
